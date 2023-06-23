@@ -3,7 +3,7 @@ let handler = async (m, { conn }) => {
   let pepe = 'https://telegra.ph/file/2e2eb7d093fec08fd00d4.jpg'
   let baper = await fetch(pepe).then(a => a.buffer())
 
-  let aine = '6285643112659@s.whatsapp.net'
+  let aine = '6289502510249@s.whatsapp.net'
   let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
   let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
   let c = pickRandom([a, b])
@@ -68,7 +68,7 @@ let handler = async (m, { conn }) => {
   products:[{productId:'5054578677954458'}]}],
   headerImage: { productId: '5054578677954458',
   jpegThumbnail: baper },
-  businessOwnerJid: `6285643112659@s.whatsapp.net`
+  businessOwnerJid: `6285691660362@s.whatsapp.net`
   },
   footerText: 'Sewabotnya Kakack',
   }},{})
@@ -80,8 +80,9 @@ let handler = async (m, { conn }) => {
 let fs = require('fs')
 const { MessageType } = require('@adiwajshing/baileys')
 let handler = async (m) => {
-m.reply(`*BOT ON 24 JAM*
-SEWA BOT 1 BULAN 10K`)
+m.reply(`
+25K
+`)
 }
 
 handler.help = ['sewa']
